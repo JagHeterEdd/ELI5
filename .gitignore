@@ -5,4 +5,4 @@
 venv/
 
 # Project
-secrets.py
+server/secrets.py

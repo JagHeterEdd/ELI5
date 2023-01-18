@@ -1,2 +1,2 @@
 default:
-	uvicorn main:app --reload
+	cd server && uvicorn server:app --reload
