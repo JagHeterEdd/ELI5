@@ -1,2 +1,8 @@
+# IDE
+.idea
+
+# Python
 venv/
+
+# Project
 secrets.py
