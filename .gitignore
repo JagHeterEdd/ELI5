@@ -5,4 +5,5 @@
 venv/
 
 # Project
-server/secrets.py
+eli5/secrets.py
+bots/secrets.py

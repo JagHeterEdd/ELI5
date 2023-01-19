@@ -1,19 +1,5 @@
 from fastapi import FastAPI
-import openai
-
-from secrets import OPENAI_API_KEY
-
-# OpenAI
-openai.api_key = OPENAI_API_KEY
-
-
-def summarize(text: str) -> str:
-    response = openai.Completion.create(max_tokens=60, engine='text-davinci-003',
-                                        prompt=text + " Explain this like I am five in less than 200 characters.")
-    output = response.choices[0].text
-
-    return output
-
+from eli5.app import summarize
 
 # FastAPI
 app = FastAPI()
